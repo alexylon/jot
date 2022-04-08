@@ -5,13 +5,14 @@
 ---
 
 ## About
-**jot** lets you get things down before you forget 
+**jot** lets you get things down before you forget, 
 without fiddling folders, naming, etc., 
 letting you write first and think about what to do with it later.
 Just open the Terminal and begin your note with the `jot` command.
 **jot** is not meant to be a text editor, 
 it is just a simple tool to jot down notes in the fastest possible way.
-You can open 'jot.txt' later and manipulate the collected notes as you wish.
+You can open 'jot.txt' later in a text editor by your choice 
+and manipulate the collected notes as you wish.
 
 ## Getting started
 - Build the source code;
