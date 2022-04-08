@@ -12,30 +12,24 @@ pub fn write_data(words: &Vec<String>) {
                 .append(true)
                 .open(&filename);
 
-            for (pos, word) in words.iter().enumerate() {
-                if pos == 0 { continue; }
-                match file {
-                    Ok(ref mut file_ok) => {
-                        match write!(file_ok, "{} ", word) {
-                            Ok(_) => {}
-                            Err(e) => { eprintln!("Couldn't write to file: {}", e) }
-                        }
-                    }
-                    Err(ref e) => { eprintln!("Error: {}", e) }
-                }
-            }
-
             match file {
                 Ok(ref mut file_ok) => {
+                    for (pos, word) in words.iter().enumerate() {
+                        if pos == 0 { continue; }
+                        match write!(file_ok, "{} ", word) {
+                            Ok(_) => {}
+                            Err(e) => { eprintln!("Couldn't write string to file: {}", e) }
+                        }
+                    }
                     match writeln!(file_ok, "") {
                         Ok(_) => {}
-                        Err(e) => { eprintln!("Couldn't write to file: {}", e) }
+                        Err(e) => { eprintln!("Couldn't write new line to file: {}", e) }
                     }
                 }
                 Err(ref e) => { eprintln!("Error: {}", e) }
             }
         }
 
-        None => println!("Impossible to get your home dir!"),
+        None => eprintln!("Impossible to get your home dir!"),
     }
 }
