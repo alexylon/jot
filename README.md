@@ -4,6 +4,12 @@
 
 ---
 
+## About
+**jot** lets you get things down before you forget 
+without fiddling folders, naming, etc., 
+letting you write first and think about what to do with it later.
+Just open the Terminal and begin your note with the `jot` command.
+
 ## Getting started
 - Build the source code;
 - Add the binary file path to PATH;
