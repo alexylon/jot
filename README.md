@@ -34,3 +34,5 @@ There are several ways to type 'Hello World :)':
 `jot Hello World ":)"`
 
 `jot Hello World :\)`
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com)
